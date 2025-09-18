@@ -9,9 +9,8 @@ import Genres from '~/lib/components/Genres';
 
 export default function Movie() {
   const params = useParams();
-  const { id } = params;
-  const [ film ] = createResource(async () => {
-    const response = await api.getFilm(id);
+  const [ film ] = createResource(() => params.id, async () => {
+    const response = await api.getFilm(params.id);
     return [response];
   });
   return (

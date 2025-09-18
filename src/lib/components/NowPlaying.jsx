@@ -3,6 +3,7 @@ import { api } from "~/lib/api";
 import Films from '~/lib/components/Films';
 
 export default function NowPlaying() {
+  console.log('NowPlaying');
   const [films] = createResource(async () => {
     const response = await api.getNowPlaying();
     return response.results;
