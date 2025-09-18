@@ -1,10 +1,11 @@
-import { createSignal } from "solid-js";
-
-export default function Counter() {
-  const [count, setCount] = createSignal(0);
+export default function Navigation() {
   return (
-    <button class="increment" onClick={() => setCount(count() + 1)} type="button">
-      Clicks: {count()}
-    </button>
+    <div class="navigation">
+      <div class="navigation-body">
+        <a href="/" class="navigation-item" aria-label="Home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 16 16"><path fill="currentColor" d="m16 9.226l-8-6.21l-8 6.21V6.694l8-6.21l8 6.21zM14 9v6h-4v-4H6v4H2V9l6-4.5z"/></svg>
+        </a>
+      </div>
+    </div>
   );
 }

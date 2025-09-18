@@ -1,10 +1,13 @@
-import { createSignal } from "solid-js";
+import Search from '~/lib/components/Search';
+import Navigation from '~/lib/components/Navigation';
 
 export default function Counter() {
-  const [count, setCount] = createSignal(0);
   return (
-    <button class="increment" onClick={() => setCount(count() + 1)} type="button">
-      Clicks: {count()}
-    </button>
+    <header>
+      <div class="header-inner container">
+        <Search />
+        <Navigation />
+      </div>
+    </header>
   );
 }

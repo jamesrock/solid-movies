@@ -1,3 +1,5 @@
+import { For } from "solid-js";
+
 export default function Genres({ genres = [] }) {
   return (
     <div class="genres">
