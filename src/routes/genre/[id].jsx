@@ -1,10 +1,12 @@
-import { Title } from "@solidjs/meta";
+import { genres } from "~/lib/api";
+import { useParams } from "@solidjs/router";
 
-export default function Genre() {
+export default function FilmGrid() {
+  const params = useParams();
+  const { id } = params;
   return (
     <main>
-      <Title>Genre</Title>
-      <h1>Genre</h1>
+      <FilmGrid id={id} name={genres[id]} />
     </main>
   );
 }

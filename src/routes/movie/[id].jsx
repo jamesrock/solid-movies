@@ -1,4 +1,3 @@
-import { Title } from "@solidjs/meta";
 import { useParams } from "@solidjs/router";
 import { createResource, For } from "solid-js";
 import { api, getRatingClass, floorRating, toTime } from "~/lib/api";
@@ -15,7 +14,6 @@ export default function Movie() {
   });
   return (
     <main>
-      <Title>{film.title}</Title>
       <For each={film()}>{(film) => (
         <div class="film">
           <div class="film-head">
@@ -37,4 +35,3 @@ export default function Movie() {
     </main>
   );
 }
-

@@ -1,10 +1,9 @@
-import { Title } from "@solidjs/meta";
+import FilmGrid from '~/lib/components/FilmGrid';
 
 export default function Coming() {
   return (
     <main>
-      <Title>Coming</Title>
-      <h1>Coming</h1>
+      <FilmGrid type="coming" name="Coming Soon" />
     </main>
   );
 }

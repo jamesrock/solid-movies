@@ -1,10 +1,9 @@
-import { Title } from "@solidjs/meta";
+import FilmGrid from '~/lib/components/FilmGrid';
 
 export default function Playing() {
   return (
     <main>
-      <Title>Playing</Title>
-      <h1>Playing</h1>
+      <FilmGrid type="playing" name="Now Playing" />
     </main>
   );
 }
