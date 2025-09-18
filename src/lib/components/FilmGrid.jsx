@@ -2,7 +2,12 @@ import { api, dedupeFilms, largest_size_map } from "../api";
 import { createSignal, For, Show, onMount } from "solid-js";
 import Poster from '~/lib/components/Poster';
 
-export default function FilmGrid({id, type = 'genre', name = 'name', sub = false}) {
+export default function FilmGrid({
+  id, 
+  type = 'genre', 
+  name = 'name', 
+  sub = false
+}) {
 	let [films, setFilms] = createSignal([]);
 	let [page, setPage] = createSignal(0);
 	let [pages, setPages] = createSignal(0);
