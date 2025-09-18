@@ -8,6 +8,6 @@ export default function ComingSoon() {
     return response.results;
   });
   return (
-    <Films films={films} name="Coming Soon" link="/coming" />
+    <Films films={films()} name="Coming Soon" link="/coming" />
   );
 }

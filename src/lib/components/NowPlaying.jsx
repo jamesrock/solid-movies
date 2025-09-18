@@ -8,6 +8,6 @@ export default function NowPlaying() {
     return response.results;
   });
   return (
-    <Films films={films} name="Now Playing" link="/playing" />
+    <Films films={films()} name="Now Playing" link="/playing" />
   );
 }

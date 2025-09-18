@@ -8,6 +8,6 @@ export default function Category({ id }) {
     return response.results;
   });
   return (
-    <Films films={films} name={genres[id]} link={`/genre/${id}`} />
+    <Films films={films()} name={genres[id]} link={`/genre/${id}`} />
   );
 }

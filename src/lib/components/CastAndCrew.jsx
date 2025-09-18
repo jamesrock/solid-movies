@@ -13,7 +13,7 @@ export default function CastAndCrew({ id }) {
         <People people={dedupe(data.cast, 'cast')} name="Cast" type="cast" />
         <People people={dedupe(sortByPriority(data.crew, 'job'), 'crew')} name="Crew" type="crew" />
       </div>
-    )}</For>    
+    )}</For>
   );
 }
 
