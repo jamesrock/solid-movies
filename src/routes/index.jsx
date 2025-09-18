@@ -1,4 +1,3 @@
-import { Title } from "@solidjs/meta";
 import NowPlaying from '~/lib/components/NowPlaying';
 import ComingSoon from '~/lib/components/ComingSoon';
 import Category from '~/lib/components/Category';
@@ -6,7 +5,6 @@ import Category from '~/lib/components/Category';
 export default function Home() {
   return (
     <main>
-      <Title>Movies</Title> 
       <div class="categories">
         <NowPlaying />
         <ComingSoon />
