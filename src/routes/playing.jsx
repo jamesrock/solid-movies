@@ -1,4 +1,4 @@
-import FilmGrid from '~/lib/components/FilmGrid';
+import { FilmGrid } from "~/lib/components";
 
 export default function Playing() {
   return (

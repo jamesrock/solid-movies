@@ -1,8 +1,7 @@
 import { useParams } from "@solidjs/router";
 import { createResource, For } from "solid-js";
 import { api } from "~/lib/api";
-import Poster from '~/lib/components/Poster';
-import Filmography from '~/lib/components/Filmography';
+import { Poster, Filmography } from "~/lib/components";
 
 export default function Person() {
   const params = useParams();

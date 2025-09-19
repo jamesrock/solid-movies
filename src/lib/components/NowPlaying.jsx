@@ -1,6 +1,6 @@
 import { createResource } from "solid-js";
 import { api } from "~/lib/api";
-import Films from '~/lib/components/Films';
+import { Films } from ".";
 
 export default function NowPlaying() {
   console.log('NowPlaying');

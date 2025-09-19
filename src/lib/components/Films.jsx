@@ -1,6 +1,6 @@
 import { For, Show } from "solid-js";
 import { getRole, largest_size_map } from "~/lib/api";
-import Poster from '~/lib/components/Poster';
+import { Poster } from ".";
 
 export default function Films(props) {
   const { name, link, credits } = props;

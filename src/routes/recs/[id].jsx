@@ -1,7 +1,7 @@
 import { useParams } from "@solidjs/router";
 import { createResource, For } from "solid-js";
 import { api } from "~/lib/api";
-import FilmGrid from '~/lib/components/FilmGrid';
+import { FilmGrid } from "~/lib/components";
 
 export default function Recs() {
   const params = useParams();

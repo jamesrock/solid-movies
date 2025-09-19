@@ -2,7 +2,7 @@ import { For } from "solid-js";
 import { getRole, largest_size_map } from "../api";
 import Poster from '~/lib/components/Poster';
 
-export default function Counter({ people, name, type }) {
+export default function People({ people, name, type }) {
   return (
     <div class="category">
       <div class="category-head">

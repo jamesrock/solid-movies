@@ -1,10 +1,7 @@
 import { useParams } from "@solidjs/router";
 import { createResource, For } from "solid-js";
 import { api, getRatingClass, floorRating, toTime } from "~/lib/api";
-import Poster from '~/lib/components/Poster';
-import CastAndCrew from '~/lib/components/CastAndCrew';
-import Recommendations from '~/lib/components/Recommendations';
-import Genres from '~/lib/components/Genres';
+import { Poster, CastAndCrew, Recommendations, Genres } from "~/lib/components";
 
 export default function Movie() {
   const params = useParams();

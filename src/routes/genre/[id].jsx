@@ -1,6 +1,6 @@
-import { genres } from "~/lib/api";
 import { useParams } from "@solidjs/router";
-import FilmGrid from '~/lib/components/FilmGrid';
+import { genres } from "~/lib/api";
+import { FilmGrid } from "~/lib/components";
 
 export default function Genre() {
   const params = useParams();

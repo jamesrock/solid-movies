@@ -1,6 +1,4 @@
-import NowPlaying from '~/lib/components/NowPlaying';
-import ComingSoon from '~/lib/components/ComingSoon';
-import Category from '~/lib/components/Category';
+import { NowPlaying, ComingSoon, Category } from "~/lib/components";
 
 export default function Home() {
   return (
