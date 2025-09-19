@@ -1,32 +1,19 @@
-# SolidStart
+## solid-movies
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+[solid-movies.jamesrock.me](https://solid-movies.jamesrock.me)
 
-## Creating a project
+This repo forms part of a project where I built the same app using Svelte, Nuxt, Next, Solid and Angular — all but one of which I'd never use before — in an effort to show that picking-up frameworks isn't quite the huge deal hiring managers seem to think it is...
 
-```bash
-# create a new project in the current directory
-npm init solid@latest
+The app itself is nothing overly fancy — just a basic film discovery site covering all the essentials one would expect such as search (actor/director/title), categories, filmographies, cast & crew. I took a classic ‘less is more’ approach with regards to the UI. It’s certainly not the most impressive thing you’ll ever see — but it is a perfectly functional single-page app fetching data from a live API, which is very much the bread and butter of modern front-end development.
 
-# create a new project in my-app
-npm init solid@latest my-app
-```
+All five repos can be found here on GitHub:
 
-## Developing
+[github.com/svelte-movies](https://github.com/jamesrock/svelte-movies)  
+[github.com/nuxt-movies](https://github.com/jamesrock/nuxt-movies)  
+[github.com/nextjs-movies](https://github.com/jamesrock/nextjs-movies)  
+[github.com/solid-movies](https://github.com/jamesrock/solid-movies)  
+[github.com/angular-movies](https://github.com/jamesrock/angular-movies)  
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Project Summary
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Solid apps are built with _presets_, which optimise your project for deployment to different environments.
-
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different preset, add it to the `devDependencies` in `package.json` and specify in your `app.config.js`.
-
-## This project was created with the [Solid CLI](https://github.com/solidjs-community/solid-cli)
+Solid is similar in many ways to React/Next — both use JSX, although, interestingly, Solid doesn’t stipulate using ‘className’ in place of ‘class’ attributes. Their so-called ‘signals’ work in the exact same way as React’s useState, which is okay, though I certainly prefer Svelte’s approach. It took just half a day to get this version of the app up and running (I actually managed two in one day!) and I found it very easy to grasp. Their docs are solid (the new ones anyway!) although I initially had some trouble running the setup script, until I realised I was using an old version — the up-to-date one was very nicely done, not dissimilar to Svelte’s, and worked a treat. Fortunately (for me at least!) there was no cornering into using TypeScript. All in all, I’m not entirely sure why Solid exists if I’m honest — it’s not different enough from React/Next for it to stand out in any particular way. I wouldn’t be in a hurry to use it again, that’s for sure.
