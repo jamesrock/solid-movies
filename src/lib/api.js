@@ -46,7 +46,6 @@ const joinFlatRoles = (roles) => {
 };
 
 export const getRole = (type, person) => {
-  // console.log(`getRole[${type}]`, person);
   switch(type) {
     case 'cast':
       return joinFlatRoles(person.characters);
@@ -159,7 +158,7 @@ const setGenres = (data) => {
   data.forEach((genre) => {
     genres[genre.id] = genre.name;
   });
-  console.log(genres);
+  // console.log(genres);
 };
 
 setGenres([
