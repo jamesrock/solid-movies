@@ -1,4 +1,3 @@
-// import { createSignal } from "solid-js";
 import { createResource, For } from "solid-js";
 import { api, dedupe } from "../api";
 import Films from '~/lib/components/Films';
